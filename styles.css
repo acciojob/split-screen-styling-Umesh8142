@@ -1,1 +1,51 @@
 /*  your css code here. If applicable */
+*{
+	box-sizing:border-box;
+}
+.container-1{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr)  ;
+    grid-template-rows: repeat(10,1fr) ;
+}
+.main-content{
+    display: grid;
+}
+.header{
+    background-color:yellowgreen;
+    height:20vh;
+    padding: 1rem;
+
+}
+.nav{
+    background-color:#D7E8D4;
+    width:16.66vw;
+    height:100vh;
+    padding: 1rem;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr)  ;
+    grid-template-rows: repeat(10,1fr) ;
+    width: 80vw;
+    height: 60vh;
+
+}
+.article{
+    background-color: white;
+    min-height: 60vh;
+    grid-column: 1/5;
+    padding: 1rem;
+}
+.aside{
+    grid-column: 5/6;
+    background-color:#f5f5dc;
+    padding: 1rem;
+}
+
+.footer{
+    background-color:yellowgreen;
+    height: 20vh;
+    padding: 1rem;
+}
